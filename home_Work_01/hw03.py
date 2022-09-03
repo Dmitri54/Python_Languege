@@ -9,7 +9,7 @@
 
 print('Программа принимает на вход координаты точки (X и Y), \nпричём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, \nв которой находится эта точка')
 def inputCoordinates(x):
-    xy = ["X", "Y", "Z"]
+    xy = ["X", "Y"]
     a = []
     for i in range(x):
         a.append(float(input(f"Введите значение {xy[i]}: ")))
@@ -30,3 +30,4 @@ def checkCoordinates(xy):
 
 coordinates = inputCoordinates(2)
 checkCoordinates(coordinates)
+
