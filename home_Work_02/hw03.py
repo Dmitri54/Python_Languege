@@ -14,7 +14,7 @@
 
 # k = int(input('Введите количество чисел в последовательности: '))
 # numbers = []
-# for i in range(0, k):
+# for i in range(0, k + 1):
 #     input_value = int(input(f'Введите число № {i}: '))
 #     numbers.append(input_value)
 # sum = 0
