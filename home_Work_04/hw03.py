@@ -11,3 +11,8 @@ for i in range(len(a)):
     else:
         print(a[i], end=' ') # 2 3 4 
 
+
+outcoming_list = [i for i in a if a.count(i) == 1] 
+# Иду по (a) и если (i) элемент встречается только один раз (a.count(1) == 1, то 
+# добавляю его в (outcoming_list)
+print(outcoming_list) # [2, 3, 4]
