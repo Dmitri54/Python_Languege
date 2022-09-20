@@ -3,18 +3,24 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных индексы элементы 3 и 9, ответ: 12
 # ----------------------------------------------------------------------------------------------------
-def f(arr):
-    return sum(x for x in arr if x % 2 == 0)
- 
- 
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(a)
-if a:
-    print(f'Сумма нечетных позиций: {f(a)}')
-else:
-    print('Сумма нечетных: None')
+# my_list = [2, 3, 5, 9, 3]
+# print(my_list)
+# sum_non_pos = 0
+
+# for x in my_list:
+#     if x % 2 != 0:
+#         sum_non_pos += x
+    
+
+# print(sum_non_pos)
 
 
-# Вывод:
-# [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# Сумма нечетных позиций: 20
+my_list = [2, 3, 5, 9, 3]
+print(my_list)
+
+filtered = [x for x in my_list if x %2 == 0]
+
+
+s = sum(filtered)
+
+print(s)
