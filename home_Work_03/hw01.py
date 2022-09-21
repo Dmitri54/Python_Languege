@@ -3,24 +3,16 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных индексы элементы 3 и 9, ответ: 12
 # ----------------------------------------------------------------------------------------------------
-# my_list = [2, 3, 5, 9, 3]
-# print(my_list)
-# sum_non_pos = 0
-
-# for x in my_list:
-#     if x % 2 != 0:
-#         sum_non_pos += x
-    
-
-# print(sum_non_pos)
+from unittest import result
 
 
-my_list = [2, 3, 5, 9, 3]
+my_list = [2, 3, 5, 9, 3, 7]
 print(my_list)
+res_sum = 0
 
-filtered = [x for x in my_list if x %2 == 0]
+for i in range(len(my_list)): 
+    if i % 2 != 0:
+        res_sum += my_list[i]
+   
 
-
-s = sum(filtered)
-
-print(s)
+print(res_sum)
