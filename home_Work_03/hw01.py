@@ -10,8 +10,9 @@ my_list = [2, 3, 5, 9, 3, 7]
 print(my_list)
 res_sum = 0
 
-for i in range(len(my_list)): 
-    if i % 2 != 0:
+for i in range(1, len(my_list), 2): # Так короче.
+# for i in range(len(my_list)): 
+    # if i % 2 != 0:
         res_sum += my_list[i]
    
 

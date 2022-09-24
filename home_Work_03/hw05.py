@@ -15,7 +15,7 @@ def fibonacci(number): # Вычисляет число Фибоначчи
 
 def number_fibo(number):
     fibo_list = []
-    for i in range(number):
+    for i in range(number + 1):
         fibo_list.append(fibonacci(i))
     return fibo_list
 
