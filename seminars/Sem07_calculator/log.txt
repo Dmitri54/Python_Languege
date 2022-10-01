@@ -1,0 +1,8 @@
+
+your equation: ['2', '+', '3'] = 5
+your equation: ['10', '/', '5'] = 2.0
+your equation: 3 + 5 = 
+your equation: 3 - 10 = -7
+your equation: 3   = None
+your equation: 90 / 5 = 18.0
+your equation: 45   = Wrong equation sign!
