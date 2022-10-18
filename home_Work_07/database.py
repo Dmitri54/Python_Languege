@@ -6,7 +6,7 @@ from config import host, user, password, db_name
 def contact_list(): # Функция, показывает контакты
     with connection.cursor() as cursor:
         cursor.execute('select * from contacts;')
-        return cursor.fetchall()
+        return cursor.fetchall() # возвращает список всех строк
 
 
 def add_contact(lst): # Функция добавляет контакт (Фамилию, Имя, Телефон)
@@ -24,7 +24,7 @@ def deletion_contact(string): # Функция удаления контакта
 def contact_finder(string): # Функция поиска контакта (Фамилия и Имя)
     with connection.cursor() as cursor:
         cursor.execute("select last_name, first_name from contacts where last_name = '{}'".format(string))
-        print(*cursor.fetchone())
+        print(*cursor.fetchone()) # возвращает 1 строку
 
 
 def change(last_name, phone): # Функция изменения номера телефона у контакта, по Фамилии.
@@ -39,4 +39,4 @@ connection = psycopg2.connect(host=host,
 
 connection.autocommit = True  # авто-коммит - без него не будет обновляться database
 
-change('Шафигуллин', '48165464684')
+change('Нагибнев', '76778790120')
