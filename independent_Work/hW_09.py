@@ -11,10 +11,10 @@ rndNum = random.randint(10,100)
 print(f'Случайное число из отрезка 10 - 99 => {rndNum}')
 
 firstDigit = rndNum // 10
-secondDigit = rndNum % 2
-
-if firstDigit > secondDigit:
-    print(f'Наибольшая цифра цисла {rndNum} => {firstDigit}')
+secondDigit = rndNum % 10
+if firstDigit == secondDigit:
+    print(f'Цифры равны, т.к. число {rndNum}')
+elif firstDigit > secondDigit:
+    print(f'Наибольшая цифра числа {rndNum} => {firstDigit}')
 else:
-    print(f'Наибольшая цифра цисла {rndNum} => {secondDigit}')
-
+    print(f'Наибольшая цифра числа {rndNum} => {secondDigit}')
