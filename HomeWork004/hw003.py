@@ -9,7 +9,8 @@ for i in range(len(a)):
         if i != j and a[i] == a[j]:
             break
     else:
-        print(a[i], end=' ') # 2 3 
+        None
+        # print(a[i], end=' ') # 2 3 
 
 
 outcoming_list = [i for i in a if a.count(i) == 1] 
