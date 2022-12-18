@@ -24,20 +24,20 @@
 # w - открытие для записи данных (ПЕРЕЗАПИСЬ ФАЙЛА)
 # w+, r+
 # ========================================================================================================
-# colors = ['red', 'green', 'blue3'] # Список _name_ = []
-# data = open('file.txt', 'a') # Открою в режиме a - ЗАПИСЬ в ФАИЛ.
-# # data.writelines(colors) # передаст строку в data.
-# data.write('\nLINE 2 \n')
-# data.write('LINE 3\n')
+# colors = ['red', 'green', 'blue'] # Список _name_ = []
+# data = open('/Users/User/Desktop/Python_Language/lessons/file_lec02.txt', 'a') # Открою в режиме a - ЗАПИСЬ в ФАИЛ.
+# data.writelines(colors) # передаст строку в data.
+# # data.write('\nLINE 2 \n')
+# # data.write('LINE 3\n')
 # data.close() # Закроет подключение к файлу.
 
-# with open('file.txt', 'a') as data: # Ещё одна конструкция, для записи данных с фаил
+# with open('/Users/User/Desktop/Python_Language/lessons/file_lec02.txt', 'a') as data: # Ещё одна конструкция, для записи данных с фаил
 #     data.write('line 123\n')
 #     data.write('line 234\n')
 # В данном случае писать data.close() не нужно. Закрытие происходит автоматически.
 
 # exit() # Позволяет отключить код находящийся ниже.
-# path = 'file.txt'
+# path = '/Users/User/Desktop/Python_Language/lessons/file_lec02.txt'
 # data = open(path, 'r') # Открою в режиме r - ЧТЕНИЕ ФАЙЛА 
 # for line in data:
 #     print(line)
