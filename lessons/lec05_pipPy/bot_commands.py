@@ -25,7 +25,7 @@ async def sum_command(update: Update, context: ContextTypes.DEFAULT_TYPE): # И�
     msg = update.message.text # Сообщение пользователя, которое я положу в отдельную переменную.
     print(msg) # Покажет, что переменная точно сохранена.
     items = msg.split() # /sum 123 534543
-    x = int(items[1])
-    y = int(items[2])
+    x = int(items[1]) # 123
+    y = int(items[2]) # 534543
 
     await update.message.reply_text(f'{x} + {y} = {x + y}')
