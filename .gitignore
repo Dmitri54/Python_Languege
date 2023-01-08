@@ -181,7 +181,7 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
-.folder/
+.folder
 __pycache__
 
 # Recycle Bin used on file shares
