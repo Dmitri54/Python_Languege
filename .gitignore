@@ -182,6 +182,7 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 .folder
+.venv
 __pycache__
 
 # Recycle Bin used on file shares
